@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import styled from "styled-components";
+import { BorderAllRounded } from "@mui/icons-material";
 
 function Main(props){
     const {weatherData} = props
@@ -14,36 +15,41 @@ function Main(props){
     return <div
       style={{
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         height: '85vh',
       }}
     >
       <div
         style={{
-          width: '400px',
-          height: '400px',
+          width: '60%',
+          height: '45%',
           backgroundColor: 'white',
+          margin:'50px',
+          borderRadius: '30px'
         }}
       >
-        <Typography fontFamily={'Patrick Hand'} variant="h4" display= {'flex'} alignItems= {'center'} >
-         {currentDayName},{currentDate}
-        </Typography>
-        <Typography fontFamily={'Patrick Hand'} variant="h3" display= {'flex'} alignItems= {'center'}>
-         {currentHours}:{currentMinutes}
+      
+        <Typography fontFamily={'Rajdhani'} padding={'2% 0 0 2%'} variant="h2" display= {'flex'} alignItems= {'center'} >
+         {currentDayName}
         </Typography>
 
-       
-        
-        <Typography fontFamily={'Patrick Hand'} variant="h1" display= {'flex'} justifyContent={'center'} paddingTop={'100px'}>
+        <Typography fontFamily={'Rajdhani'} paddingLeft={'2%'} variant="h4" display= {'flex'} alignItems= {'center'} >
+        {currentDate}
+        </Typography>
+
+        {/* <Typography fontFamily={'Patrick Hand'} variant="h3" display= {'flex'} alignItems= {'center'}>
+         {currentHours}:{currentMinutes}
+        </Typography> */}
+
+        <Typography fontFamily={'Rajdhani'} padding={'6% 0 0 2%'} variant="h1" display= {'flex'}  >
         {weatherData && weatherData.data[0].temp}&deg;C
         </Typography>
         
         
+{/*         
         <Typography fontFamily={'Patrick Hand'} variant="h2" display= {'flex'} justifyContent={'center'}  >
        {weatherData && weatherData.data[0].city_name},{weatherData && weatherData.data[0].country_code}
         </Typography>
-      
+       */}
         
         
         {/* {weatherData && weatherData.data[0].temp}  */}
