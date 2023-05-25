@@ -34,7 +34,7 @@ setCity(e)
       <Header cityname={cityname}/>
       <Main weatherData={weatherData}
       />
-      <Footer />
+      {/* <Footer /> */}
     </>
 }
 
