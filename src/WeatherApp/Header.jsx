@@ -8,6 +8,7 @@ const Header1 = styled.header`
   display: flex;
   justify-content: space-between;
   Height:100px;
+  Widht:100%;
   padding-left:30px;
   
 `;
@@ -19,12 +20,14 @@ function Header(props){
     }
 
     return (
+    
         <Header1>
           <Typography fontFamily={'Patrick Hand'} variant="h3" display= {'flex'} alignItems= {'center'}>
             WeatherApp
         </Typography>
         <DropDown clickHandler={clickHandler}/>
         </Header1>
+        
       );
 }
 

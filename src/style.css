@@ -1,59 +1,47 @@
-body{
- background-color: #b8c3e2;
-margin: 0%;
-padding:0;
-box-sizing: border-box;
-background-image: url("");
-background-size:cover;
+body {
+  background-color: #b8c3e2;
+  margin: 0%;
+  padding: 0;
 }
 
-.box{
-    width:60%;
-    height:80%;
+.box {
+  width: 60%;
+  height: 80%;
 }
-
 footer {
-    background-color:#EAE4E9;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-  }
-  
-  footer p {
-    color: black;
-  }
+  background-color: #eae4e9;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+footer p {
+  color: black;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 200px;
+}
 
-  .card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 200px;
-  }
-
-  .firstCard{
-    background-color: red;
-    width: fit-content;
-
-  }
-.secondCard{
-    background-color: red;
-    width: fit-content;
-
-    
-  }
-.thirdCard{
-    background-color: red;
-    width: fit-content;
-    
-  }
-.fourthCard{
-    background-color: red;
-    width: fit-content;
-    
-  }
-.fifthCard{
-    background-color: red;
-    width: fit-content;
-    
-  }
+.firstCard {
+  background-color: red;
+  width: fit-content;
+}
+.secondCard {
+  background-color: red;
+  width: fit-content;
+}
+.thirdCard {
+  background-color: red;
+  width: fit-content;
+}
+.fourthCard {
+  background-color: red;
+  width: fit-content;
+}
+.fifthCard {
+  background-color: red;
+  width: fit-content;
+}
