@@ -3,9 +3,9 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 
-function App(){
+function App() {
   const [weatherData, setWeatherData] = useState(null);
-  const [city,setCity] = useState("delhi");
+  const [city, setCity] = useState("delhi");
   const apikey = "200edd7785484cddbd61e47c958d679c";
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function App(){
         );
 
         const data = await response.json();
-        console.log(data.data)
+        console.log(data.data);
         setWeatherData(data);
       } catch (error) {
         console.error("Error:", error);
@@ -26,16 +26,17 @@ function App(){
     getWeatherData();
   }, [city]);
 
-const cityname = (e) => {
-setCity(e)
-}
+  const cityname = (e) => {
+    setCity(e);
+  };
 
-    return <>
-      <Header cityname={cityname}/>
-      <Main weatherData={weatherData}
-      />
-      {/* <Footer /> */}
+  return (
+    <>
+      <Header cityname={cityname} />
+      <Main weatherData={weatherData} />
+      <Footer /> :
     </>
+  );
 }
 
 export default App;
